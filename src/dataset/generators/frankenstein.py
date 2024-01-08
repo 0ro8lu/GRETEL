@@ -15,6 +15,8 @@ class FRANKENSTEIN(Generator):
         self.frankenestein_arcs_path = join(base_path, 'FRANKENSTEIN_A.txt')  
         self.frankenestein_graphid_path = join(base_path, 'FRANKENSTEIN_graph_indicator.txt')
         self.frankenestein_graphlabels_path = join(base_path, 'FRANKENSTEIN_graph_labels.txt')
+        #rimuovere per rollback
+        self.frankenestein_nodeattibutes_path = join(base_path, 'FRANKENSTEIN_node_attributes.txt')
         self.generate_dataset()
 
     def get_num_instances(self):
@@ -41,23 +43,37 @@ class FRANKENSTEIN(Generator):
         for label in graphs_labels:
             graph_labels_list.append(int(label.strip()))
         
+        #rimuovere per rollback
+        #gets node attributes
+        node_attributes=open(self.frankenestein_nodeattibutes_path,'r').readlines()
+        
         #gets adjecency matrixes for each graph in the dataset and add them along with their labels
         with open(self.frankenestein_graphid_path,'r') as f:
             graphids=f.read().strip().split('\n')
+            for i in range(len(graphids)):
+                graphids[i]=int(graphids[i].strip())
             graphids_unique_sorted=sorted(list(set(graphids)))
-            graphid_nodeid={}
+            graphid_nodeposition={}
             for graphid in graphids_unique_sorted:
                 position=graphids.index(graphid)
-                graphid_nodeid[graphid]=position
+                graphid_nodeposition[graphid]=position
             instance_id=0
             for graphid in graphids_unique_sorted:
+                #rimuovere per rollback
+                node_count=graphids.count(graphid)
+                node_atr_graphid=[0 for x in range(graphids.count(graphid))]
                 matrix_dim=graphids.count(graphid)
                 result = np.zeros((matrix_dim,matrix_dim))
+                firstnode_position=graphid_nodeposition[graphid]
                 for arc in arcs_tuples:
                     if graphids[arc[0]-1] == graphid:
-                        firstnode_position=graphid_nodeid[graphid]
                         result[arc[0]-1-firstnode_position][arc[1]-1-firstnode_position]=1
-                label=graph_labels_list[int(graphid)-1]
+                for node in range(1,len(graphids)+1):
+                    #rimuovere per rollback
+                    if graphids[node-1] == graphid:
+                        node_atr_graphid[node-1-firstnode_position]=node_attributes[node-1].split(',')
+                label=max(0,graph_labels_list[int(graphid)-1])
+                #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=np.array(node_atr_graphid,dtype=np.float32)))
                 self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
                 instance_id+=1
 
@@ -102,4 +118,4 @@ class FRANKENSTEIN(Generator):
 #             #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
 
 
-# read_adjacency_matrices('/Users/macjack/Documents/MachineLearning/project/GRETEL/data/datasets/FRANKENSTEIN')
+# read_adjacency_matrices('C:\Users\werry\Desktop\GRETEL 2.0\GRETEL\data\datasets\FRANKENSTEIN')
