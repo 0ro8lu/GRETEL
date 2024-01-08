@@ -46,6 +46,7 @@ class FRANKENSTEIN(Generator):
         #rimuovere per rollback
         #gets node attributes
         node_attributes=open(self.frankenestein_nodeattibutes_path,'r').readlines()
+        attributes_len=len(node_attributes[0].split(','))
         
         #gets adjecency matrixes for each graph in the dataset and add them along with their labels
         with open(self.frankenestein_graphid_path,'r') as f:
@@ -61,7 +62,8 @@ class FRANKENSTEIN(Generator):
             for graphid in graphids_unique_sorted:
                 #rimuovere per rollback
                 node_count=graphids.count(graphid)
-                node_atr_graphid=[0 for x in range(graphids.count(graphid))]
+                #node_atr_graphid=[0 for x in range(graphids.count(graphid))]
+                node_atr_graphid=np.zeros((graphids.count(graphid),attributes_len)).astype(dtype=np.float32)
                 matrix_dim=graphids.count(graphid)
                 result = np.zeros((matrix_dim,matrix_dim))
                 firstnode_position=graphid_nodeposition[graphid]
@@ -70,11 +72,12 @@ class FRANKENSTEIN(Generator):
                         result[arc[0]-1-firstnode_position][arc[1]-1-firstnode_position]=1
                 for node in range(1,len(graphids)+1):
                     #rimuovere per rollback
+                    single_node_attributes=node_attributes[node-1].split(',')
                     if graphids[node-1] == graphid:
-                        node_atr_graphid[node-1-firstnode_position]=node_attributes[node-1].split(',')
+                        node_atr_graphid[node-1-firstnode_position]=np.array(single_node_attributes).astype(np.float32)
                 label=max(0,graph_labels_list[int(graphid)-1])
-                #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=np.array(node_atr_graphid,dtype=np.float32)))
-                self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
+                self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=node_atr_graphid))
+                #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
                 instance_id+=1
 
 # def read_adjacency_matrices(base_path):

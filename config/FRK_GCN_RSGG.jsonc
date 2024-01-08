@@ -45,20 +45,7 @@
       }
     }],
     
-    "explainers": [
-                    {"class": "src.explainer.ensemble.explainer_ensemble_base.ExplainerEnsemble",
-                     "parameters": {
-                                    "explainers": [
-                                                {"class": "src.explainer.search.dces.DCESExplainer",
-                                                "parameters": {}}
-                                                ],
-                                    "aggregator": {
-                                        "class": "src.explainer.ensemble.explanation_aggregator_top_select.ExplanationTopSelect",
-                                        "parameters": {}
-                                    }
-                                    }
-                    }
-                ],
+    "explainers": [{"class": "src.explainer.search.dces.DCESExplainer","parameters": {}}],
     "compose_mes" : "config/snippets/default_metrics.json",
     "compose_strs" : "config/snippets/default_store_paths.json"
 }
