@@ -7,10 +7,14 @@ import networkx as nx
 from src.dataset.instances.graph import GraphInstance
 from src.dataset.generators.base import Generator
 
+from zipfile import ZipFile 
+
 class FRANKENSTEIN(Generator):
 
     def init(self):
         base_path = self.local_config['parameters']['data_dir']
+        with ZipFile('data/datasets/FRANKENSTEIN.zip', 'r') as zip: 
+            zip.extractall('data/datasets') 
         # Paths to the files of the "FRANKENSTEIN" dataset
         self.frankenestein_arcs_path = join(base_path, 'FRANKENSTEIN_A.txt')  
         self.frankenestein_graphid_path = join(base_path, 'FRANKENSTEIN_graph_indicator.txt')
@@ -62,7 +66,6 @@ class FRANKENSTEIN(Generator):
             for graphid in graphids_unique_sorted:
                 #rimuovere per rollback
                 node_count=graphids.count(graphid)
-                #node_atr_graphid=[0 for x in range(graphids.count(graphid))]
                 node_atr_graphid=np.zeros((graphids.count(graphid),attributes_len)).astype(dtype=np.float32)
                 matrix_dim=graphids.count(graphid)
                 result = np.zeros((matrix_dim,matrix_dim))
@@ -71,10 +74,11 @@ class FRANKENSTEIN(Generator):
                     if graphids[arc[0]-1] == graphid:
                         result[arc[0]-1-firstnode_position][arc[1]-1-firstnode_position]=1
                 for node in range(1,len(graphids)+1):
-                    #rimuovere per rollback
-                    single_node_attributes=node_attributes[node-1].split(',')
+                    #rimuovere per rollback        
                     if graphids[node-1] == graphid:
-                        node_atr_graphid[node-1-firstnode_position]=np.array(single_node_attributes).astype(np.float32)
+                        single_node_attributes=node_attributes[node-1].split(',')
+                        node_array=np.array(single_node_attributes).astype(np.float32)
+                        node_atr_graphid[node-1-firstnode_position]=node_array
                 label=max(0,graph_labels_list[int(graphid)-1])
                 self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=node_atr_graphid))
                 #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
