@@ -14,7 +14,11 @@ class FRANKENSTEIN(Generator):
     def init(self):
         base_path = self.local_config['parameters']['data_dir']
         with ZipFile('data/datasets/FRANKENSTEIN.zip', 'r') as zip: 
-            zip.extractall('data/datasets') 
+            zip.extractall('data/datasets')
+        node_map={}
+        for i in range(780):
+            node_map['env'+str(i)]=i
+        self.dataset.node_features_map = node_map
         # Paths to the files of the "FRANKENSTEIN" dataset
         self.frankenestein_arcs_path = join(base_path, 'FRANKENSTEIN_A.txt')  
         self.frankenestein_graphid_path = join(base_path, 'FRANKENSTEIN_graph_indicator.txt')
