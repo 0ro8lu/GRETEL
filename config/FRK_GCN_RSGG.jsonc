@@ -23,7 +23,7 @@
         "oracle": {
           "class": "src.oracle.nn.torch.OracleTorch",
           "parameters": {
-              "epochs": 80,
+              "epochs": 50,
               "batch_size": 32,
               "optimizer": {
                   "class": "torch.optim.Adam",
@@ -39,7 +39,7 @@
                 },
               "model": { 
                 "class": "src.oracle.nn.gcn.DownstreamGCN",
-                "parameters": {"num_conv_layers":3,"num_dense_layers":1,"conv_booster":10,"linear_decay":1.8}
+                "parameters": {"num_conv_layers":3,"num_dense_layers":1,"conv_booster":2,"linear_decay":1.8}
             } 
           }   
       }
