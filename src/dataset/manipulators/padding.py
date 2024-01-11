@@ -9,6 +9,7 @@ class GraphPadding(BaseManipulator):
     
     def node_info(self, instance):
         max_nodes=max(self.dataset.num_nodes_values)
+        print(max_nodes)
         n_nodes=instance.data.shape[0]
         num_padding= max(0,max_nodes-n_nodes)
         instance.data=np.pad(instance.data,((0,num_padding),(0,num_padding)),'constant',constant_values=0)
