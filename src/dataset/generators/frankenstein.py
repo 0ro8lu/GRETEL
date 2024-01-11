@@ -67,27 +67,30 @@ class FRANKENSTEIN(Generator):
                 position=graphids.index(graphid)
                 graphid_nodeposition[graphid]=position
             instance_id=0
+            max_count=0
             for graphid in graphids_unique_sorted:
-                if np.random.randint(0,2):
-                    #rimuovere per rollback
-                    node_count=graphids.count(graphid)
-                    node_atr_graphid=np.zeros((graphids.count(graphid),attributes_len)).astype(dtype=np.float32)
-                    matrix_dim=graphids.count(graphid)
-                    result = np.zeros((matrix_dim,matrix_dim))
-                    firstnode_position=graphid_nodeposition[graphid]
-                    for arc in arcs_tuples:
-                        if graphids[arc[0]-1] == graphid:
-                            result[arc[0]-1-firstnode_position][arc[1]-1-firstnode_position]=1
-                    for node in range(1,len(graphids)+1):
-                        #rimuovere per rollback        
-                        if graphids[node-1] == graphid:
-                            single_node_attributes=node_attributes[node-1].split(',')
-                            node_array=np.array(single_node_attributes).astype(np.float32)
-                            node_atr_graphid[node-1-firstnode_position]=node_array
-                    label=max(0,graph_labels_list[int(graphid)-1])
-                    self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=node_atr_graphid))
-                    #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
-                    instance_id+=1
+                #rimuovere per rollback
+                node_count=graphids.count(graphid)
+                if node_count>max_count:
+                    max_count=node_count
+                node_atr_graphid=np.zeros((graphids.count(graphid),attributes_len)).astype(dtype=np.float32)
+                matrix_dim=graphids.count(graphid)
+                result = np.zeros((matrix_dim,matrix_dim))
+                firstnode_position=graphid_nodeposition[graphid]
+                for arc in arcs_tuples:
+                    if graphids[arc[0]-1] == graphid:
+                        result[arc[0]-1-firstnode_position][arc[1]-1-firstnode_position]=1
+                for node in range(1,len(graphids)+1):
+                    #rimuovere per rollback        
+                    if graphids[node-1] == graphid:
+                        single_node_attributes=node_attributes[node-1].split(',')
+                        node_array=np.array(single_node_attributes).astype(np.float32)
+                        node_atr_graphid[node-1-firstnode_position]=node_array
+                label=max(0,graph_labels_list[int(graphid)-1])
+                self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32), node_features=node_atr_graphid))
+                #self.dataset.instances.append(GraphInstance(instance_id, label=label, data=np.array(result, dtype=np.int32)))
+                instance_id+=1
+            print(max_count)
 
 # def read_adjacency_matrices(base_path):
 #     frankenestein_arcs_path = join(base_path, 'FRANKENSTEIN_A.txt')  
