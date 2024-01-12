@@ -29,10 +29,18 @@ class Evaluator(ABC):
         self._run_number = run_number
         self._explanations = []
         
+       
+        data.local_config["name"] = data.name
+        oracle.local_config["name"] = oracle.name
+        explainer.local_config["name"] = explainer.name
 
         # Building the config file to write into disk
         evaluator_config = {'dataset': clean_cfg(data.local_config), 'oracle': clean_cfg(oracle.local_config), 'explainer': clean_cfg(explainer.local_config), 'metrics': []}
         evaluator_config['scope']=self._scope
+        evaluator_config['experiment']=data.context.conf["experiment"]
+        evaluator_config['store_paths']=data.context.conf["store_paths"]
+        
+        
         for metric in evaluation_metrics:
             evaluator_config['metrics'].append(metric._config_dict)
         # creatig the results dictionary with the basic info
