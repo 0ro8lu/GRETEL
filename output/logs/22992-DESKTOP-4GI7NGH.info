@@ -1,0 +1,11 @@
+2024-01-12 21:05:31,-12084817 | INFO | 22992 - Executing: config/submission/FRK_GCN_CF2_500_02_002_07_20_09.jsonc Run: -1
+2024-01-12 21:05:31,-12084815 | INFO | 22992 - Creating the evaluation manager.......................................................
+2024-01-12 21:05:31,-12084814 | INFO | 22992 - Creating the PAIRED evaluators...............................................................
+2024-01-12 21:05:31,-12084761 | INFO | 22992 - Loading: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-12 21:05:32,-12084185 | INFO | 22992 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-12 21:05:32,-12084151 | INFO | 22992 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 21:05:32,-12083958 | INFO | 22992 - Instantiating: torch.optim.Adam
+2024-01-12 21:05:32,-12083957 | INFO | 22992 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 21:05:32,-12083733 | INFO | 22992 - Loading: OracleTorch-833cf3fe44554e4679a404561e4e2d40
+2024-01-12 21:05:32,-12083530 | INFO | 22992 - Created: OracleTorch-833cf3fe44554e4679a404561e4e2d40
+2024-01-12 21:05:33,-12083478 | INFO | 22992 - Creating: CF2Explainer-9b9564bc9a22e9bc1bd012670b8d23e1

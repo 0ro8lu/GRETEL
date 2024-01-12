@@ -1,0 +1,24 @@
+2024-01-12 20:58:01,-12535440 | INFO | 23516 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 20:58:01,-12535439 | INFO | 23516 - Creating the evaluation manager.......................................................
+2024-01-12 20:58:01,-12535437 | INFO | 23516 - Creating the PAIRED evaluators...............................................................
+2024-01-12 20:58:01,-12535368 | INFO | 23516 - Creating: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:58:01,-12535368 | INFO | 23516 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-12 21:00:59,-12356727 | INFO | 23516 - Apply: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-12 21:00:59,-12356727 | INFO | 23516 - Instantiating: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-12 21:01:00,-12356193 | INFO | 23516 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 21:01:00,-12356193 | INFO | 23516 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 21:01:21,-12335479 | INFO | 23516 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 21:01:21,-12335479 | INFO | 23516 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 21:01:21,-12334689 | INFO | 23516 - Saved: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 21:01:21,-12334667 | INFO | 23516 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 21:01:21,-12334632 | INFO | 23516 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 21:01:22,-12334430 | INFO | 23516 - Instantiating: torch.optim.Adam
+2024-01-12 21:01:22,-12334429 | INFO | 23516 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 21:01:22,-12334204 | INFO | 23516 - Creating: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 21:02:05,-12290549 | INFO | 23516 - epoch = 0 ---> loss = 0.7211	 accuracy = 0.5751
+2024-01-12 21:02:22,-12274179 | INFO | 23516 - Test accuracy = 0.5980
+2024-01-12 21:02:22,-12274174 | INFO | 23516 - OracleTorch trained on cuda in: 60.03020882606506 secs
+2024-01-12 21:02:22,-12274072 | INFO | 23516 - Saved: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 21:02:22,-12274060 | INFO | 23516 - Created: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 21:02:22,-12274044 | INFO | 23516 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-12 21:02:22,-12274038 | INFO | 23516 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator

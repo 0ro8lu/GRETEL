@@ -1,0 +1,12 @@
+2024-01-12 20:54:50,-12725840 | INFO | 23712 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 20:54:50,-12725839 | INFO | 23712 - Creating the evaluation manager.......................................................
+2024-01-12 20:54:50,-12725837 | INFO | 23712 - Creating the PAIRED evaluators...............................................................
+2024-01-12 20:54:50,-12725767 | INFO | 23712 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:54:51,-12725079 | INFO | 23712 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:54:51,-12725042 | INFO | 23712 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 20:54:51,-12724821 | INFO | 23712 - Instantiating: torch.optim.Adam
+2024-01-12 20:54:51,-12724819 | INFO | 23712 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 20:54:51,-12724527 | INFO | 23712 - Loading: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 20:54:52,-12724334 | INFO | 23712 - Created: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 20:54:52,-12724313 | INFO | 23712 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-12 20:54:52,-12724306 | INFO | 23712 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator

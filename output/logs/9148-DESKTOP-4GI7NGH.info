@@ -1,0 +1,24 @@
+2024-01-12 23:59:42,-1634215 | INFO | 9148 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 23:59:42,-1634210 | INFO | 9148 - Creating the evaluation manager.......................................................
+2024-01-12 23:59:42,-1634206 | INFO | 9148 - Creating the PAIRED evaluators...............................................................
+2024-01-12 23:59:42,-1634085 | INFO | 9148 - Creating: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 23:59:42,-1634084 | INFO | 9148 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-13 00:02:40,-1455809 | INFO | 9148 - Apply: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-13 00:02:40,-1455808 | INFO | 9148 - Instantiating: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-13 00:02:41,-1455325 | INFO | 9148 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-13 00:02:41,-1455325 | INFO | 9148 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-13 00:03:01,-1434993 | INFO | 9148 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-13 00:03:01,-1434992 | INFO | 9148 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-13 00:03:02,-1434329 | INFO | 9148 - Saved: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 00:03:02,-1434282 | INFO | 9148 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 00:03:02,-1434248 | INFO | 9148 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-13 00:03:02,-1434055 | INFO | 9148 - Instantiating: torch.optim.Adam
+2024-01-13 00:03:02,-1434053 | INFO | 9148 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-13 00:03:02,-1433980 | INFO | 9148 - Creating: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-13 00:03:35,-1401202 | INFO | 9148 - epoch = 0 ---> loss = 0.7084	 accuracy = 0.5625
+2024-01-13 00:03:45,-1391320 | INFO | 9148 - Test accuracy = 0.5688
+2024-01-13 00:03:45,-1391314 | INFO | 9148 - OracleTorch trained on cpu in: 42.665026903152466 secs
+2024-01-13 00:03:45,-1391229 | INFO | 9148 - Saved: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-13 00:03:45,-1391215 | INFO | 9148 - Created: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-13 00:03:45,-1391200 | INFO | 9148 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-13 00:03:45,-1391191 | INFO | 9148 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator

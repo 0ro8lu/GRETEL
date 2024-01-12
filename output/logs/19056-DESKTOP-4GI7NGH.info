@@ -1,0 +1,16 @@
+2024-01-12 22:58:24,-5311874 | INFO | 19056 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 22:58:24,-5311873 | INFO | 19056 - Creating the evaluation manager.......................................................
+2024-01-12 22:58:24,-5311871 | INFO | 19056 - Creating the PAIRED evaluators...............................................................
+2024-01-12 22:58:24,-5311818 | INFO | 19056 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 22:58:25,-5311397 | INFO | 19056 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 22:58:25,-5311326 | INFO | 19056 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 22:58:25,-5311126 | INFO | 19056 - Instantiating: torch.optim.Adam
+2024-01-12 22:58:25,-5311125 | INFO | 19056 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 22:58:25,-5311068 | INFO | 19056 - Creating: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 22:58:57,-5278602 | INFO | 19056 - epoch = 0 ---> loss = 0.7319	 accuracy = 0.5625
+2024-01-12 22:59:07,-5268776 | INFO | 19056 - Test accuracy = 0.5683
+2024-01-12 22:59:07,-5268770 | INFO | 19056 - OracleTorch trained on cpu in: 42.29699492454529 secs
+2024-01-12 22:59:07,-5268653 | INFO | 19056 - Saved: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 22:59:07,-5268637 | INFO | 19056 - Created: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 22:59:07,-5268621 | INFO | 19056 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-12 22:59:07,-5268613 | INFO | 19056 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator

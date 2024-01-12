@@ -1,0 +1,21 @@
+2024-01-12 21:07:14,-11982306 | INFO | 5304 - Executing: config/submission/FRK_GCN_CF2_500_02_002_07_20_09.jsonc Run: -1
+2024-01-12 21:07:14,-11982305 | INFO | 5304 - Creating the evaluation manager.......................................................
+2024-01-12 21:07:14,-11982303 | INFO | 5304 - Creating the PAIRED evaluators...............................................................
+2024-01-12 21:07:14,-11982248 | INFO | 5304 - Creating: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-12 21:07:14,-11982248 | INFO | 5304 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-12 21:10:33,-11783367 | INFO | 5304 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 21:10:33,-11783367 | INFO | 5304 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 21:10:53,-11762561 | INFO | 5304 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 21:10:53,-11762561 | INFO | 5304 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 21:10:54,-11761850 | INFO | 5304 - Saved: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-12 21:10:54,-11761836 | INFO | 5304 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-12 21:10:54,-11761805 | INFO | 5304 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 21:10:54,-11761616 | INFO | 5304 - Instantiating: torch.optim.Adam
+2024-01-12 21:10:54,-11761616 | INFO | 5304 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 21:10:55,-11761378 | INFO | 5304 - Creating: OracleTorch-833cf3fe44554e4679a404561e4e2d40
+2024-01-12 21:11:36,-11720437 | INFO | 5304 - epoch = 0 ---> loss = 0.6872	 accuracy = 0.5900
+2024-01-12 21:11:51,-11704988 | INFO | 5304 - Test accuracy = 0.6353
+2024-01-12 21:11:51,-11704982 | INFO | 5304 - OracleTorch trained on cuda in: 56.39624261856079 secs
+2024-01-12 21:11:51,-11704887 | INFO | 5304 - Saved: OracleTorch-833cf3fe44554e4679a404561e4e2d40
+2024-01-12 21:11:51,-11704876 | INFO | 5304 - Created: OracleTorch-833cf3fe44554e4679a404561e4e2d40
+2024-01-12 21:11:51,-11704833 | INFO | 5304 - Creating: CF2Explainer-9b9564bc9a22e9bc1bd012670b8d23e1
