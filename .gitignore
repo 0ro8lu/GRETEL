@@ -9,6 +9,7 @@ data/datasets/FRANKENSTEIN
 # Distribution / packaging
 .Python
 build/
+prova/
 develop-eggs/
 dist/
 downloads/
@@ -132,7 +133,6 @@ dmypy.json
 
 # data folders
 data/cache/*
-output/
 stats/
 AAAI/
 config/_papers
