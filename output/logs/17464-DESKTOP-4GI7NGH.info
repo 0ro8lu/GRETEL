@@ -1,0 +1,18 @@
+2024-01-09 23:08:48,-263887543 | INFO | 17464 - Executing: config/FRK_GCN_RSGG.jsonc Run: 0
+2024-01-09 23:08:48,-263887541 | INFO | 17464 - Creating the evaluation manager.......................................................
+2024-01-09 23:08:48,-263887539 | INFO | 17464 - Creating the PAIRED evaluators...............................................................
+2024-01-09 23:08:49,-263887445 | INFO | 17464 - Loading: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-09 23:08:49,-263886766 | INFO | 17464 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-09 23:08:49,-263886691 | INFO | 17464 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-09 23:08:50,-263886421 | INFO | 17464 - Instantiating: torch.optim.Adam
+2024-01-09 23:08:50,-263886420 | INFO | 17464 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-09 23:08:50,-263886177 | INFO | 17464 - Loading: OracleTorch-9fdabcaa0cdfcc42372e8809c77dcd4a
+2024-01-09 23:08:50,-263886001 | INFO | 17464 - Created: OracleTorch-9fdabcaa0cdfcc42372e8809c77dcd4a
+2024-01-09 23:08:50,-263885989 | INFO | 17464 - Instantiating: src.evaluation.evaluation_metric_ged.GraphEditDistanceMetric
+2024-01-09 23:08:50,-263885986 | INFO | 17464 - Created: DCESExplainer-c75d58eaedb38b9bb00092fe07380990
+2024-01-09 23:08:50,-263885984 | INFO | 17464 - Evaluating the explainers.............................................................
+2024-01-09 23:08:50,-263885954 | INFO | 17464 - Evaluating instance with id 14
+2024-01-09 23:10:27,-263789289 | INFO | 17464 - evaluated instance with id 14
+2024-01-09 23:10:27,-263789288 | INFO | 17464 - Evaluating instance with id 20
+2024-01-09 23:12:08,-263688207 | INFO | 17464 - evaluated instance with id 20
+2024-01-09 23:12:08,-263688206 | INFO | 17464 - Evaluating instance with id 34

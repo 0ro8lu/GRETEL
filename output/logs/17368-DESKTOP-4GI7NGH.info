@@ -1,0 +1,17 @@
+2024-01-10 16:49:44,-200231682 | INFO | 17368 - Executing: config/submission/FRK_GCN_CLEAR_600_001_01_04_015.jsonc Run: 0
+2024-01-10 16:49:44,-200231680 | INFO | 17368 - Creating the evaluation manager.......................................................
+2024-01-10 16:49:44,-200231678 | INFO | 17368 - Creating the PAIRED evaluators...............................................................
+2024-01-10 16:49:44,-200231620 | INFO | 17368 - Creating: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-10 16:49:44,-200231620 | INFO | 17368 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-10 16:53:16,-200020155 | INFO | 17368 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-10 16:53:16,-200020155 | INFO | 17368 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-10 16:53:44,-199991989 | INFO | 17368 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-10 16:53:44,-199991989 | INFO | 17368 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-10 16:53:46,-199990480 | INFO | 17368 - Saved: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-10 16:53:46,-199990463 | INFO | 17368 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-10 16:53:46,-199990392 | INFO | 17368 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-10 16:53:46,-199990075 | INFO | 17368 - Instantiating: torch.optim.Adam
+2024-01-10 16:53:46,-199990074 | INFO | 17368 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-10 16:53:46,-199989748 | INFO | 17368 - Loading: OracleTorch-9fdabcaa0cdfcc42372e8809c77dcd4a
+2024-01-10 16:53:46,-199989562 | INFO | 17368 - Created: OracleTorch-9fdabcaa0cdfcc42372e8809c77dcd4a
+2024-01-10 16:53:47,-199989466 | INFO | 17368 - Creating: CLEARExplainer-112fd82fd562d1c90d6771ea054e55d1

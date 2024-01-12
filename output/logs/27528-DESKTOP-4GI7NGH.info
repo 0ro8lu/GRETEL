@@ -1,0 +1,9 @@
+�\�,-361558605 | INFO | 27528 - Executing: config/FRK_GCN_RSGG.jsonc Run: 0
+�\�,-361558604 | INFO | 27528 - Creating the evaluation manager.......................................................
+�\�,-361558601 | INFO | 27528 - Creating the PAIRED evaluators...............................................................
+�\�,-361555840 | INFO | 27528 - Loading: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+�\�,-361553136 | INFO | 27528 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+�\�,-361553070 | INFO | 27528 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+�\�,-361551600 | INFO | 27528 - Instantiating: torch.optim.Adam
+�\�,-361551599 | INFO | 27528 - Instantiating: torch.nn.CrossEntropyLoss
+�\�,-361548386 | INFO | 27528 - Creating: OracleTorch-19d62c40f63db8c433076190f5520c49

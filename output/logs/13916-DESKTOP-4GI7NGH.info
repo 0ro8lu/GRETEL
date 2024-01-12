@@ -1,0 +1,7 @@
+2024-01-12 20:34:40,-13935948 | INFO | 13916 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 20:34:40,-13935947 | INFO | 13916 - Creating the evaluation manager.......................................................
+2024-01-12 20:34:40,-13935946 | INFO | 13916 - Creating the PAIRED evaluators...............................................................
+2024-01-12 20:34:40,-13935880 | INFO | 13916 - Creating: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:34:40,-13935879 | INFO | 13916 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-12 20:38:01,-13735063 | INFO | 13916 - Apply: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-12 20:38:01,-13735062 | INFO | 13916 - Instantiating: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN

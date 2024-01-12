@@ -1,0 +1,24 @@
+2024-01-12 20:38:59,-13677134 | INFO | 26704 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-12 20:38:59,-13677097 | INFO | 26704 - Creating the evaluation manager.......................................................
+2024-01-12 20:38:59,-13677096 | INFO | 26704 - Creating the PAIRED evaluators...............................................................
+2024-01-12 20:38:59,-13677040 | INFO | 26704 - Creating: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:38:59,-13677040 | INFO | 26704 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-12 20:41:56,-13500020 | INFO | 26704 - Apply: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-12 20:41:56,-13500019 | INFO | 26704 - Instantiating: src.dataset.manipulators.pad_gcgan.GraphPaddingGCGAN
+2024-01-12 20:41:57,-13499485 | INFO | 26704 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 20:41:57,-13499485 | INFO | 26704 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-12 20:42:17,-13478723 | INFO | 26704 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 20:42:17,-13478723 | INFO | 26704 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-12 20:42:18,-13477579 | INFO | 26704 - Saved: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:42:18,-13477534 | INFO | 26704 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-12 20:42:19,-13477502 | INFO | 26704 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-12 20:42:19,-13477289 | INFO | 26704 - Instantiating: torch.optim.Adam
+2024-01-12 20:42:19,-13477288 | INFO | 26704 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-12 20:42:19,-13476924 | INFO | 26704 - Creating: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 20:43:03,-13432678 | INFO | 26704 - epoch = 0 ---> loss = 0.7245	 accuracy = 0.5683
+2024-01-12 20:43:20,-13416253 | INFO | 26704 - Test accuracy = 0.5736
+2024-01-12 20:43:20,-13416237 | INFO | 26704 - OracleTorch trained on cuda in: 60.687058448791504 secs
+2024-01-12 20:43:20,-13416114 | INFO | 26704 - Saved: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 20:43:20,-13416101 | INFO | 26704 - Created: OracleTorch-7e326d02830c2a18be6ecf16e185f51f
+2024-01-12 20:43:20,-13416084 | INFO | 26704 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-12 20:43:20,-13416078 | INFO | 26704 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator

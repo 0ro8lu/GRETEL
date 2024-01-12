@@ -1,0 +1,7 @@
+2024-01-10 16:57:32,-199764458 | INFO | 18724 - Executing: config/submission/FRK_GCN_CLEAR_600_001_01_04_015.jsonc Run: 0
+2024-01-10 16:57:32,-199764457 | INFO | 18724 - Creating the evaluation manager.......................................................
+2024-01-10 16:57:32,-199764455 | INFO | 18724 - Creating the PAIRED evaluators...............................................................
+2024-01-10 16:57:32,-199764400 | INFO | 18724 - Creating: FRANKENSTEIN-734b89c4d08e454480841c92f2e65051
+2024-01-10 16:57:32,-199764400 | INFO | 18724 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-10 17:01:13,-199542539 | INFO | 18724 - Apply: src.dataset.manipulators.padding.GraphPadding
+2024-01-10 17:01:13,-199542539 | INFO | 18724 - Instantiating: src.dataset.manipulators.padding.GraphPadding

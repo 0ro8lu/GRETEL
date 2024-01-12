@@ -1,0 +1,17 @@
+2024-01-10 17:47:08,-196788466 | INFO | 25284 - Executing: config/submission/FRK_GCN_CLEAR_600_001_01_04_015.jsonc Run: 0
+2024-01-10 17:47:08,-196788463 | INFO | 25284 - Creating the evaluation manager.......................................................
+2024-01-10 17:47:08,-196788462 | INFO | 25284 - Creating the PAIRED evaluators...............................................................
+2024-01-10 17:47:08,-196788404 | INFO | 25284 - Creating: FRANKENSTEIN-734b89c4d08e454480841c92f2e65051
+2024-01-10 17:47:08,-196788403 | INFO | 25284 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
+2024-01-10 17:50:40,-196575747 | INFO | 25284 - Apply: src.dataset.manipulators.padding.GraphPadding
+2024-01-10 17:50:40,-196575747 | INFO | 25284 - Instantiating: src.dataset.manipulators.padding.GraphPadding
+2024-01-10 17:50:46,-196569705 | INFO | 25284 - Apply: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-10 17:50:46,-196569704 | INFO | 25284 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
+2024-01-10 17:55:10,-196306215 | INFO | 25284 - Apply: src.dataset.manipulators.weights.EdgeWeights
+2024-01-10 17:55:10,-196306210 | INFO | 25284 - Instantiating: src.dataset.manipulators.weights.EdgeWeights
+2024-01-10 17:55:42,-196274345 | INFO | 25284 - Saved: FRANKENSTEIN-734b89c4d08e454480841c92f2e65051
+2024-01-10 17:55:42,-196274287 | INFO | 25284 - Created: FRANKENSTEIN-734b89c4d08e454480841c92f2e65051
+2024-01-10 17:55:42,-196274140 | INFO | 25284 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-10 17:55:43,-196273430 | INFO | 25284 - Instantiating: torch.optim.Adam
+2024-01-10 17:55:43,-196273418 | INFO | 25284 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-10 17:55:43,-196272902 | INFO | 25284 - Creating: OracleTorch-b7ba01f9b6ba7630aa6c3391b3a76a3c
