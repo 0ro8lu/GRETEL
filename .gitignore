@@ -5,11 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-data/datasets/FRANKENSTEIN
+
 # Distribution / packaging
 .Python
 build/
-prova/
 develop-eggs/
 dist/
 downloads/
@@ -133,6 +132,7 @@ dmypy.json
 
 # data folders
 data/cache/*
+output/
 stats/
 AAAI/
 config/_papers
@@ -143,3 +143,4 @@ config/_papers
 
 # Testing files
 main_test.py
+da_test.py
