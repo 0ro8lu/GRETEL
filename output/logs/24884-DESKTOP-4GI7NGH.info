@@ -1,0 +1,9 @@
+2024-01-13 04:34:38,14861880 | INFO | 24884 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-13 04:34:38,14861881 | INFO | 24884 - Creating the evaluation manager.......................................................
+2024-01-13 04:34:38,14861882 | INFO | 24884 - Creating the PAIRED evaluators...............................................................
+2024-01-13 04:34:38,14862008 | INFO | 24884 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 04:34:39,14862786 | INFO | 24884 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 04:34:39,14862822 | INFO | 24884 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-13 04:34:39,14863038 | INFO | 24884 - Instantiating: torch.optim.Adam
+2024-01-13 04:34:39,14863039 | INFO | 24884 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-13 04:34:39,14863088 | INFO | 24884 - Creating: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
