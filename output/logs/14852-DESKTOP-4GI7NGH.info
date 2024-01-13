@@ -22,3 +22,15 @@
 2024-01-13 04:50:06,15789901 | INFO | 14852 - Created: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
 2024-01-13 04:50:06,15789917 | INFO | 14852 - Instantiating: src.explainer.generative.gans.image.model.GAN
 2024-01-13 04:50:06,15789924 | INFO | 14852 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator
+2024-01-13 18:03:37,63400886 | INFO | 14852 - Executing: config/submission/FRK_GCN_GCGAN_150.jsonc Run: -1
+2024-01-13 18:03:37,63400922 | INFO | 14852 - Creating the evaluation manager.......................................................
+2024-01-13 18:03:37,63400923 | INFO | 14852 - Creating the PAIRED evaluators...............................................................
+2024-01-13 18:03:37,63400980 | INFO | 14852 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 18:03:38,63401615 | INFO | 14852 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-13 18:03:38,63401652 | INFO | 14852 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-13 18:03:38,63401877 | INFO | 14852 - Instantiating: torch.optim.Adam
+2024-01-13 18:03:38,63401877 | INFO | 14852 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-13 18:03:38,63401922 | INFO | 14852 - Loading: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
+2024-01-13 18:03:38,63402111 | INFO | 14852 - Created: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
+2024-01-13 18:03:38,63402128 | INFO | 14852 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-13 18:03:38,63402137 | INFO | 14852 - Instantiating: src.explainer.generative.gans.image.res_gen.ResGenerator
