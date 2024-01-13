@@ -23,12 +23,12 @@
         "oracle": {
           "class": "src.oracle.nn.torch.OracleTorch",
           "parameters": {
-              "epochs": 1,
+              "epochs": 60,
               "batch_size": 32,
               "optimizer": {
                   "class": "torch.optim.Adam",
                   "parameters": {
-                      "lr":0.003 
+                      "lr":0.001 
                   }
                 },
               "loss_fn": {
@@ -45,7 +45,7 @@
       }
     }],
     
-    "explainers": [{"class": "src.explainer.generative.clear.CLEARExplainer","parameters":{ "epochs": 1, "lr": 0.01, "lambda_cfe": 0.1, "alpha": 0.4, "batch_size_ratio": 0.15 }}],
+    "explainers": [{"class": "src.explainer.generative.clear.CLEARExplainer","parameters":{ "epochs": 150, "lr": 0.01, "lambda_cfe": 0.1, "alpha": 0.4, "batch_size_ratio": 0.15 }}],
     // "explainers": [],
     "compose_mes" : "config/snippets/default_metrics.json",
     "compose_strs" : "config/snippets/default_store_paths.json"

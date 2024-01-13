@@ -22,12 +22,12 @@
         "oracle": {
           "class": "src.oracle.nn.torch.OracleTorch",
           "parameters": {
-              "epochs": 100,
+              "epochs": 60,
               "batch_size": 32,
               "optimizer": {
                   "class": "torch.optim.Adam",
                   "parameters": {
-                      "lr":0.003 
+                      "lr":0.001
                   }
                 },
               "loss_fn": {
