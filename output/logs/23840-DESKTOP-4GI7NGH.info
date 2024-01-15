@@ -1,7 +1,0 @@
-p�P�e,-363602085 | INFO | 23840 - Executing: config/FRK_GCN_RSGG.jsonc Run: 0
-p�P�e,-363602083 | INFO | 23840 - Creating the evaluation manager.......................................................
-p�P�e,-363602082 | INFO | 23840 - Creating the PAIRED evaluators...............................................................
-p�P�e,-363599319 | INFO | 23840 - Creating: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
-p�P�e,-363599319 | INFO | 23840 - Instantiating: src.dataset.generators.frankenstein.FRANKENSTEIN
-p�P�e,-363416214 | INFO | 23840 - Apply: src.dataset.manipulators.centralities.NodeCentrality
-p�P�e,-363416213 | INFO | 23840 - Instantiating: src.dataset.manipulators.centralities.NodeCentrality
