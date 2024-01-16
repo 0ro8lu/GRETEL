@@ -1,0 +1,17 @@
+2024-01-16 01:02:56,261360287 | INFO | 5768 - Executing: config/submission/FRK_GCN_GCGAN_150_fold_0_NOPAD.jsonc Run: -1
+2024-01-16 01:02:56,261360288 | INFO | 5768 - Creating the evaluation manager.......................................................
+2024-01-16 01:02:56,261360290 | INFO | 5768 - Creating the PAIRED evaluators...............................................................
+2024-01-16 01:02:56,261360350 | INFO | 5768 - Loading: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-16 01:02:57,261360944 | INFO | 5768 - Created: FRANKENSTEIN-45e395b14a2f2f59c29f0a580b30aef9
+2024-01-16 01:02:57,261360986 | INFO | 5768 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-16 01:02:57,261361214 | INFO | 5768 - Instantiating: torch.optim.Adam
+2024-01-16 01:02:57,261361215 | INFO | 5768 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-16 01:02:57,261361263 | INFO | 5768 - Loading: OracleTorch-3572cada3a620cfc6a307fe5e35be6d9
+2024-01-16 01:02:57,261361438 | INFO | 5768 - Created: OracleTorch-3572cada3a620cfc6a307fe5e35be6d9
+2024-01-16 01:02:57,261361464 | INFO | 5768 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-16 01:02:57,261361478 | INFO | 5768 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-16 01:02:58,261361752 | INFO | 5768 - Instantiating: torch.optim.SGD
+2024-01-16 01:02:58,261361753 | INFO | 5768 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-16 01:02:58,261361756 | INFO | 5768 - Instantiating: torch.optim.SGD
+2024-01-16 01:02:58,261361757 | INFO | 5768 - Instantiating: torch.nn.BCELoss
+2024-01-16 01:02:58,261361862 | INFO | 5768 - Creating: GAN-e9255c32b19e33527125680abb91e061

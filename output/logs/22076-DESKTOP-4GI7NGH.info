@@ -1,0 +1,31 @@
+2024-01-16 16:33:33,317197033 | INFO | 22076 - Executing: config/submission/FRK_GCN_GCGAN_150_fold_3.jsonc Run: -1
+2024-01-16 16:33:33,317197035 | INFO | 22076 - Creating the evaluation manager.......................................................
+2024-01-16 16:33:33,317197036 | INFO | 22076 - Creating the PAIRED evaluators...............................................................
+2024-01-16 16:33:33,317197100 | INFO | 22076 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-16 16:33:34,317197575 | INFO | 22076 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-16 16:33:34,317197646 | INFO | 22076 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-16 16:33:34,317197963 | INFO | 22076 - Instantiating: torch.optim.Adam
+2024-01-16 16:33:34,317197964 | INFO | 22076 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-16 16:33:34,317198015 | INFO | 22076 - Loading: OracleTorch-f2a0e05a23f7033dd12e23244c2d33fa
+2024-01-16 16:33:34,317198106 | INFO | 22076 - Created: OracleTorch-f2a0e05a23f7033dd12e23244c2d33fa
+2024-01-16 16:33:34,317198120 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-16 16:33:34,317198126 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-16 16:33:34,317198467 | INFO | 22076 - Instantiating: torch.optim.SGD
+2024-01-16 16:33:34,317198468 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-16 16:33:34,317198472 | INFO | 22076 - Instantiating: torch.optim.SGD
+2024-01-16 16:33:34,317198472 | INFO | 22076 - Instantiating: torch.nn.BCELoss
+2024-01-16 16:33:35,317198575 | INFO | 22076 - Loading: GAN-e45ddc22c6cf81fd8a0e2821b77453c8
+2024-01-16 16:33:35,317198766 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-16 16:33:35,317198768 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-16 16:33:35,317199105 | INFO | 22076 - Instantiating: torch.optim.SGD
+2024-01-16 16:33:35,317199107 | INFO | 22076 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-16 16:33:35,317199113 | INFO | 22076 - Instantiating: torch.optim.SGD
+2024-01-16 16:33:35,317199114 | INFO | 22076 - Instantiating: torch.nn.BCELoss
+2024-01-16 16:33:35,317199192 | INFO | 22076 - Loading: GAN-da8ea4cd79b13acae9807284bba30663
+2024-01-16 16:33:35,317199411 | INFO | 22076 - Instantiating: src.utils.samplers.bernoulli.Bernoulli
+2024-01-16 16:33:35,317199453 | INFO | 22076 - Creating: GCounteRGAN-aec2ec2283f29e12af26b76a98c6ebec
+2024-01-16 16:33:35,317199457 | INFO | 22076 - GCounteRGAN trained on cpu in: 0.003999471664428711 secs
+2024-01-16 16:33:35,317199462 | INFO | 22076 - Saved: GCounteRGAN-aec2ec2283f29e12af26b76a98c6ebec
+2024-01-16 16:33:35,317199475 | INFO | 22076 - Created: GCounteRGAN-aec2ec2283f29e12af26b76a98c6ebec
+2024-01-16 16:33:35,317199477 | INFO | 22076 - Evaluating the explainers.............................................................
+2024-01-16 16:33:36,317199501 | INFO | 22076 - Evaluating instance with id 2

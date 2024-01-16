@@ -1,0 +1,21 @@
+2024-01-16 16:20:17,316401013 | INFO | 22184 - Executing: config/submission/FRK_GCN_GCGAN_150_fold_2.jsonc Run: -1
+2024-01-16 16:20:17,316401015 | INFO | 22184 - Creating the evaluation manager.......................................................
+2024-01-16 16:20:17,316401017 | INFO | 22184 - Creating the PAIRED evaluators...............................................................
+2024-01-16 16:20:17,316401073 | INFO | 22184 - Loading: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-16 16:20:17,316401451 | INFO | 22184 - Created: FRANKENSTEIN-9a9b6c65065cda904972cbbd256b63d4
+2024-01-16 16:20:18,316401521 | INFO | 22184 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-16 16:20:18,316401730 | INFO | 22184 - Instantiating: torch.optim.Adam
+2024-01-16 16:20:18,316401731 | INFO | 22184 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-16 16:20:18,316401779 | INFO | 22184 - Creating: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
+2024-01-16 16:20:50,316433879 | INFO | 22184 - epoch = 0 ---> loss = 0.6778	 accuracy = 0.5907
+2024-01-16 16:21:00,316444302 | INFO | 22184 - Test accuracy = 0.6381
+2024-01-16 16:21:00,316444308 | INFO | 22184 - OracleTorch trained on cpu in: 42.528998374938965 secs
+2024-01-16 16:21:00,316444418 | INFO | 22184 - Saved: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
+2024-01-16 16:21:00,316444435 | INFO | 22184 - Created: OracleTorch-46646c3f40c3d436a0d7335d7b5c4039
+2024-01-16 16:21:00,316444449 | INFO | 22184 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-16 16:21:00,316444455 | INFO | 22184 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-16 16:21:01,316444747 | INFO | 22184 - Instantiating: torch.optim.SGD
+2024-01-16 16:21:01,316444748 | INFO | 22184 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-16 16:21:01,316444751 | INFO | 22184 - Instantiating: torch.optim.SGD
+2024-01-16 16:21:01,316444752 | INFO | 22184 - Instantiating: torch.nn.BCELoss
+2024-01-16 16:21:01,316444841 | INFO | 22184 - Creating: GAN-f1e4f510ea881b25835187ab01179990

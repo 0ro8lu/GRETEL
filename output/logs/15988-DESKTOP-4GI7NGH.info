@@ -1,0 +1,131 @@
+2024-01-15 20:55:36,246520341 | INFO | 15988 - Executing: config/TCR-500-64-0.4_GCN_GCounteRGAN.jsonc Run: -1
+2024-01-15 20:55:36,246520343 | INFO | 15988 - Creating the evaluation manager.......................................................
+2024-01-15 20:55:36,246520344 | INFO | 15988 - Creating the PAIRED evaluators...............................................................
+2024-01-15 20:55:36,246520458 | INFO | 15988 - Loading: TreeCyclesRand-cb6337cf640cfc712837473de946df57
+2024-01-15 20:55:37,246520600 | INFO | 15988 - Created: TreeCyclesRand-cb6337cf640cfc712837473de946df57
+2024-01-15 20:55:37,246520617 | INFO | 15988 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-15 20:55:37,246520638 | INFO | 15988 - Instantiating: torch.optim.RMSprop
+2024-01-15 20:55:37,246520639 | INFO | 15988 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-15 20:55:37,246520683 | INFO | 15988 - Loading: OracleTorch-d4c5ec7328c604a7cb0a3e1429673283
+2024-01-15 20:55:37,246520761 | INFO | 15988 - Created: OracleTorch-d4c5ec7328c604a7cb0a3e1429673283
+2024-01-15 20:55:37,246520783 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-15 20:55:37,246520789 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-15 20:55:45,246528785 | INFO | 15988 - Instantiating: torch.optim.SGD
+2024-01-15 20:55:45,246528786 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-15 20:55:45,246528792 | INFO | 15988 - Instantiating: torch.optim.SGD
+2024-01-15 20:55:45,246528793 | INFO | 15988 - Instantiating: torch.nn.BCELoss
+2024-01-15 20:55:46,246529745 | INFO | 15988 - Loading: GAN-9082de8609806bb0419ec83c55732879
+2024-01-15 20:56:34,246577586 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-15 20:56:34,246577682 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
+2024-01-15 20:56:42,246586360 | INFO | 15988 - Instantiating: torch.optim.SGD
+2024-01-15 20:56:42,246586376 | INFO | 15988 - Instantiating: src.explainer.generative.gans.image.discriminators.SimpleDiscriminator
+2024-01-15 20:56:42,246586389 | INFO | 15988 - Instantiating: torch.optim.SGD
+2024-01-15 20:56:42,246586390 | INFO | 15988 - Instantiating: torch.nn.BCELoss
+2024-01-15 20:57:31,246634600 | INFO | 15988 - Loading: GAN-5edbffc467b7aaa786f1784ad732535e
+2024-01-15 20:58:17,246681002 | INFO | 15988 - Instantiating: src.utils.samplers.bernoulli.Bernoulli
+2024-01-15 20:58:17,246681361 | INFO | 15988 - Creating: GCounteRGAN-4136a1f3cec1e8bfdc7976091fa3ad48
+2024-01-15 20:58:17,246681372 | INFO | 15988 - GCounteRGAN trained on cpu in: 0.006998300552368164 secs
+2024-01-15 20:58:17,246681379 | INFO | 15988 - Saved: GCounteRGAN-4136a1f3cec1e8bfdc7976091fa3ad48
+2024-01-15 20:58:17,246681418 | INFO | 15988 - Created: GCounteRGAN-4136a1f3cec1e8bfdc7976091fa3ad48
+2024-01-15 20:58:17,246681431 | INFO | 15988 - Evaluating the explainers.............................................................
+2024-01-15 20:58:17,246681444 | INFO | 15988 - Evaluating instance with id 7
+2024-01-15 20:59:49,246773032 | INFO | 15988 - evaluated instance with id 7
+2024-01-15 20:59:49,246773042 | INFO | 15988 - Evaluating instance with id 15
+2024-01-15 21:00:14,246797887 | INFO | 15988 - evaluated instance with id 15
+2024-01-15 21:00:14,246797892 | INFO | 15988 - Evaluating instance with id 38
+2024-01-15 21:00:29,246813373 | INFO | 15988 - evaluated instance with id 38
+2024-01-15 21:00:29,246813378 | INFO | 15988 - Evaluating instance with id 40
+2024-01-15 21:00:49,246832929 | INFO | 15988 - evaluated instance with id 40
+2024-01-15 21:00:49,246832933 | INFO | 15988 - Evaluating instance with id 47
+2024-01-15 21:01:04,246848272 | INFO | 15988 - evaluated instance with id 47
+2024-01-15 21:01:04,246848278 | INFO | 15988 - Evaluating instance with id 56
+2024-01-15 21:01:17,246861274 | INFO | 15988 - evaluated instance with id 56
+2024-01-15 21:01:17,246861333 | INFO | 15988 - Evaluating instance with id 61
+2024-01-15 21:01:29,246872793 | INFO | 15988 - evaluated instance with id 61
+2024-01-15 21:01:29,246872797 | INFO | 15988 - Evaluating instance with id 90
+2024-01-15 21:01:42,246886342 | INFO | 15988 - evaluated instance with id 90
+2024-01-15 21:01:42,246886345 | INFO | 15988 - Evaluating instance with id 106
+2024-01-15 21:01:56,246900465 | INFO | 15988 - evaluated instance with id 106
+2024-01-15 21:01:56,246900468 | INFO | 15988 - Evaluating instance with id 127
+2024-01-15 21:02:12,246915526 | INFO | 15988 - evaluated instance with id 127
+2024-01-15 21:02:12,246915530 | INFO | 15988 - Evaluating instance with id 133
+2024-01-15 21:02:24,246928117 | INFO | 15988 - evaluated instance with id 133
+2024-01-15 21:02:24,246928122 | INFO | 15988 - Evaluating instance with id 135
+2024-01-15 21:02:49,246952887 | INFO | 15988 - evaluated instance with id 135
+2024-01-15 21:02:49,246952893 | INFO | 15988 - Evaluating instance with id 137
+2024-01-15 21:03:07,246970714 | INFO | 15988 - evaluated instance with id 137
+2024-01-15 21:03:07,246970720 | INFO | 15988 - Evaluating instance with id 140
+2024-01-15 21:03:35,246998778 | INFO | 15988 - evaluated instance with id 140
+2024-01-15 21:03:35,246998785 | INFO | 15988 - Evaluating instance with id 161
+2024-01-15 21:03:48,247012310 | INFO | 15988 - evaluated instance with id 161
+2024-01-15 21:03:48,247012316 | INFO | 15988 - Evaluating instance with id 166
+2024-01-15 21:04:03,247027308 | INFO | 15988 - evaluated instance with id 166
+2024-01-15 21:04:03,247027313 | INFO | 15988 - Evaluating instance with id 176
+2024-01-15 21:04:20,247043802 | INFO | 15988 - evaluated instance with id 176
+2024-01-15 21:04:20,247043808 | INFO | 15988 - Evaluating instance with id 195
+2024-01-15 21:04:39,247062917 | INFO | 15988 - evaluated instance with id 195
+2024-01-15 21:04:39,247062925 | INFO | 15988 - Evaluating instance with id 200
+2024-01-15 21:04:52,247076039 | INFO | 15988 - evaluated instance with id 200
+2024-01-15 21:04:52,247076044 | INFO | 15988 - Evaluating instance with id 211
+2024-01-15 21:05:05,247089429 | INFO | 15988 - evaluated instance with id 211
+2024-01-15 21:05:05,247089434 | INFO | 15988 - Evaluating instance with id 213
+2024-01-15 21:05:31,247114950 | INFO | 15988 - evaluated instance with id 213
+2024-01-15 21:05:31,247114956 | INFO | 15988 - Evaluating instance with id 225
+2024-01-15 21:05:54,247137910 | INFO | 15988 - evaluated instance with id 225
+2024-01-15 21:05:54,247137915 | INFO | 15988 - Evaluating instance with id 227
+2024-01-15 21:06:11,247154735 | INFO | 15988 - evaluated instance with id 227
+2024-01-15 21:06:11,247154740 | INFO | 15988 - Evaluating instance with id 237
+2024-01-15 21:06:26,247170272 | INFO | 15988 - evaluated instance with id 237
+2024-01-15 21:06:26,247170277 | INFO | 15988 - Evaluating instance with id 260
+2024-01-15 21:06:42,247185721 | INFO | 15988 - evaluated instance with id 260
+2024-01-15 21:06:42,247185725 | INFO | 15988 - Evaluating instance with id 262
+2024-01-15 21:06:54,247198241 | INFO | 15988 - evaluated instance with id 262
+2024-01-15 21:06:54,247198245 | INFO | 15988 - Evaluating instance with id 278
+2024-01-15 21:07:26,247229675 | INFO | 15988 - evaluated instance with id 278
+2024-01-15 21:07:26,247229681 | INFO | 15988 - Evaluating instance with id 293
+2024-01-15 21:07:43,247247159 | INFO | 15988 - evaluated instance with id 293
+2024-01-15 21:07:43,247247165 | INFO | 15988 - Evaluating instance with id 302
+2024-01-15 21:08:02,247266451 | INFO | 15988 - evaluated instance with id 302
+2024-01-15 21:08:02,247266459 | INFO | 15988 - Evaluating instance with id 329
+2024-01-15 21:08:15,247279082 | INFO | 15988 - evaluated instance with id 329
+2024-01-15 21:08:15,247279087 | INFO | 15988 - Evaluating instance with id 333
+2024-01-15 21:08:33,247296699 | INFO | 15988 - evaluated instance with id 333
+2024-01-15 21:08:33,247296704 | INFO | 15988 - Evaluating instance with id 335
+2024-01-15 21:08:46,247309992 | INFO | 15988 - evaluated instance with id 335
+2024-01-15 21:08:46,247309998 | INFO | 15988 - Evaluating instance with id 347
+2024-01-15 21:09:20,247343598 | INFO | 15988 - evaluated instance with id 347
+2024-01-15 21:09:20,247343605 | INFO | 15988 - Evaluating instance with id 349
+2024-01-15 21:09:43,247367048 | INFO | 15988 - evaluated instance with id 349
+2024-01-15 21:09:43,247367055 | INFO | 15988 - Evaluating instance with id 354
+2024-01-15 21:10:04,247387846 | INFO | 15988 - evaluated instance with id 354
+2024-01-15 21:10:04,247387852 | INFO | 15988 - Evaluating instance with id 377
+2024-01-15 21:10:24,247407593 | INFO | 15988 - evaluated instance with id 377
+2024-01-15 21:10:24,247407598 | INFO | 15988 - Evaluating instance with id 378
+2024-01-15 21:10:47,247431152 | INFO | 15988 - evaluated instance with id 378
+2024-01-15 21:10:47,247431158 | INFO | 15988 - Evaluating instance with id 381
+2024-01-15 21:11:12,247456462 | INFO | 15988 - evaluated instance with id 381
+2024-01-15 21:11:12,247456467 | INFO | 15988 - Evaluating instance with id 387
+2024-01-15 21:11:30,247474087 | INFO | 15988 - evaluated instance with id 387
+2024-01-15 21:11:30,247474092 | INFO | 15988 - Evaluating instance with id 400
+2024-01-15 21:11:45,247488539 | INFO | 15988 - evaluated instance with id 400
+2024-01-15 21:11:45,247488545 | INFO | 15988 - Evaluating instance with id 401
+2024-01-15 21:11:59,247502870 | INFO | 15988 - evaluated instance with id 401
+2024-01-15 21:11:59,247502876 | INFO | 15988 - Evaluating instance with id 419
+2024-01-15 21:12:20,247524323 | INFO | 15988 - evaluated instance with id 419
+2024-01-15 21:12:20,247524329 | INFO | 15988 - Evaluating instance with id 424
+2024-01-15 21:12:41,247545199 | INFO | 15988 - evaluated instance with id 424
+2024-01-15 21:12:41,247545206 | INFO | 15988 - Evaluating instance with id 434
+2024-01-15 21:13:00,247563839 | INFO | 15988 - evaluated instance with id 434
+2024-01-15 21:13:00,247563845 | INFO | 15988 - Evaluating instance with id 435
+2024-01-15 21:13:22,247586123 | INFO | 15988 - evaluated instance with id 435
+2024-01-15 21:13:22,247586128 | INFO | 15988 - Evaluating instance with id 437
+2024-01-15 21:13:35,247599338 | INFO | 15988 - evaluated instance with id 437
+2024-01-15 21:13:35,247599346 | INFO | 15988 - Evaluating instance with id 459
+2024-01-15 21:13:50,247613625 | INFO | 15988 - evaluated instance with id 459
+2024-01-15 21:13:50,247613630 | INFO | 15988 - Evaluating instance with id 481
+2024-01-15 21:14:08,247631867 | INFO | 15988 - evaluated instance with id 481
+2024-01-15 21:14:08,247631874 | INFO | 15988 - Evaluating instance with id 485
+2024-01-15 21:14:21,247645487 | INFO | 15988 - evaluated instance with id 485
+2024-01-15 21:14:22,247645493 | INFO | 15988 - Evaluating instance with id 495
+2024-01-15 21:14:48,247672485 | INFO | 15988 - evaluated instance with id 495
+2024-01-15 21:14:49,247672490 | INFO | 15988 - {'src.evaluation.evaluation_metric_runtime.RuntimeMetric': [{'id': '7', 'value': 91.54362416267395}, {'id': '15', 'value': 24.786430835723877}, {'id': '38', 'value': 15.442035436630249}, {'id': '40', 'value': 19.525033235549927}, {'id': '47', 'value': 15.300888538360596}, {'id': '56', 'value': 12.96277642250061}, {'id': '61', 'value': 11.419215440750122}, {'id': '90', 'value': 13.508233308792114}, {'id': '106', 'value': 14.076665878295898}, {'id': '127', 'value': 15.027918100357056}, {'id': '133', 'value': 12.556817531585693}, {'id': '135', 'value': 24.71521234512329}, {'id': '137', 'value': 17.786075353622437}, {'id': '140', 'value': 28.0017511844635}, {'id': '161', 'value': 13.493006467819214}, {'id': '166', 'value': 14.962753772735596}, {'id': '176', 'value': 16.45070743560791}, {'id': '195', 'value': 19.036519765853882}, {'id': '200', 'value': 13.079176664352417}, {'id': '211', 'value': 13.349753379821777}, {'id': '213', 'value': 25.483937740325928}, {'id': '225', 'value': 22.918938875198364}, {'id': '227', 'value': 16.77864408493042}, {'id': '237', 'value': 15.502792358398438}, {'id': '260', 'value': 15.409365892410278}, {'id': '262', 'value': 12.475727081298828}, {'id': '278', 'value': 31.3919620513916}, {'id': '293', 'value': 17.44306254386902}, {'id': '302', 'value': 19.23635768890381}, {'id': '329', 'value': 12.593291282653809}, {'id': '333', 'value': 17.57240343093872}, {'id': '335', 'value': 13.247387170791626}, {'id': '347', 'value': 33.558324575424194}, {'id': '349', 'value': 23.39226222038269}, {'id': '354', 'value': 20.750728845596313}, {'id': '377', 'value': 19.694268465042114}, {'id': '378', 'value': 23.516008615493774}, {'id': '381', 'value': 25.25374746322632}, {'id': '387', 'value': 17.590677499771118}, {'id': '400', 'value': 14.405088663101196}, {'id': '401', 'value': 14.295109748840332}, {'id': '419', 'value': 21.41734552383423}, {'id': '424', 'value': 20.826943397521973}, {'id': '434', 'value': 18.59702444076538}, {'id': '435', 'value': 22.240707635879517}, {'id': '437', 'value': 13.151288270950317}, {'id': '459', 'value': 14.239428281784058}, {'id': '481', 'value': 18.189008712768555}, {'id': '485', 'value': 13.560765504837036}, {'id': '495', 'value': 26.95651650428772}], 'src.evaluation.evaluation_metric_ged.GraphEditDistanceMetric': [{'id': '7', 'value': 974.0}, {'id': '15', 'value': 993.5}, {'id': '38', 'value': 967.0}, {'id': '40', 'value': 0.0}, {'id': '47', 'value': 1014.5}, {'id': '56', 'value': 996.0}, {'id': '61', 'value': 1002.5}, {'id': '90', 'value': 998.5}, {'id': '106', 'value': 987.5}, {'id': '127', 'value': 0.0}, {'id': '133', 'value': 0.0}, {'id': '135', 'value': 0.0}, {'id': '137', 'value': 0.0}, {'id': '140', 'value': 1021.5}, {'id': '161', 'value': 0.0}, {'id': '166', 'value': 0.0}, {'id': '176', 'value': 1006.0}, {'id': '195', 'value': 0.0}, {'id': '200', 'value': 0.0}, {'id': '211', 'value': 0.0}, {'id': '213', 'value': 0.0}, {'id': '225', 'value': 0.0}, {'id': '227', 'value': 1010.5}, {'id': '237', 'value': 0.0}, {'id': '260', 'value': 972.5}, {'id': '262', 'value': 975.0}, {'id': '278', 'value': 0.0}, {'id': '293', 'value': 977.5}, {'id': '302', 'value': 1010.0}, {'id': '329', 'value': 0.0}, {'id': '333', 'value': 965.5}, {'id': '335', 'value': 0.0}, {'id': '347', 'value': 0.0}, {'id': '349', 'value': 991.5}, {'id': '354', 'value': 998.5}, {'id': '377', 'value': 973.0}, {'id': '378', 'value': 0.0}, {'id': '381', 'value': 963.5}, {'id': '387', 'value': 0.0}, {'id': '400', 'value': 986.0}, {'id': '401', 'value': 0.0}, {'id': '419', 'value': 0.0}, {'id': '424', 'value': 0.0}, {'id': '434', 'value': 0.0}, {'id': '435', 'value': 0.0}, {'id': '437', 'value': 987.0}, {'id': '459', 'value': 0.0}, {'id': '481', 'value': 1010.0}, {'id': '485', 'value': 991.0}, {'id': '495', 'value': 960.0}], 'src.evaluation.evaluation_metric_oracle_calls.OracleCallsMetric': [{'id': '7', 'value': 2}, {'id': '15', 'value': 2}, {'id': '38', 'value': 2}, {'id': '40', 'value': 2}, {'id': '47', 'value': 2}, {'id': '56', 'value': 2}, {'id': '61', 'value': 2}, {'id': '90', 'value': 2}, {'id': '106', 'value': 2}, {'id': '127', 'value': 2}, {'id': '133', 'value': 2}, {'id': '135', 'value': 2}, {'id': '137', 'value': 2}, {'id': '140', 'value': 2}, {'id': '161', 'value': 2}, {'id': '166', 'value': 2}, {'id': '176', 'value': 2}, {'id': '195', 'value': 2}, {'id': '200', 'value': 2}, {'id': '211', 'value': 2}, {'id': '213', 'value': 2}, {'id': '225', 'value': 2}, {'id': '227', 'value': 2}, {'id': '237', 'value': 2}, {'id': '260', 'value': 2}, {'id': '262', 'value': 2}, {'id': '278', 'value': 2}, {'id': '293', 'value': 2}, {'id': '302', 'value': 2}, {'id': '329', 'value': 2}, {'id': '333', 'value': 2}, {'id': '335', 'value': 2}, {'id': '347', 'value': 2}, {'id': '349', 'value': 2}, {'id': '354', 'value': 2}, {'id': '377', 'value': 2}, {'id': '378', 'value': 2}, {'id': '381', 'value': 2}, {'id': '387', 'value': 2}, {'id': '400', 'value': 2}, {'id': '401', 'value': 2}, {'id': '419', 'value': 2}, {'id': '424', 'value': 2}, {'id': '434', 'value': 2}, {'id': '435', 'value': 2}, {'id': '437', 'value': 2}, {'id': '459', 'value': 2}, {'id': '481', 'value': 2}, {'id': '485', 'value': 2}, {'id': '495', 'value': 2}], 'src.evaluation.evaluation_metric_correctness.CorrectnessMetric': [{'id': '7', 'value': 1}, {'id': '15', 'value': 1}, {'id': '38', 'value': 1}, {'id': '40', 'value': 0}, {'id': '47', 'value': 1}, {'id': '56', 'value': 1}, {'id': '61', 'value': 1}, {'id': '90', 'value': 1}, {'id': '106', 'value': 1}, {'id': '127', 'value': 0}, {'id': '133', 'value': 0}, {'id': '135', 'value': 0}, {'id': '137', 'value': 0}, {'id': '140', 'value': 1}, {'id': '161', 'value': 0}, {'id': '166', 'value': 0}, {'id': '176', 'value': 1}, {'id': '195', 'value': 0}, {'id': '200', 'value': 0}, {'id': '211', 'value': 0}, {'id': '213', 'value': 0}, {'id': '225', 'value': 0}, {'id': '227', 'value': 1}, {'id': '237', 'value': 0}, {'id': '260', 'value': 1}, {'id': '262', 'value': 1}, {'id': '278', 'value': 0}, {'id': '293', 'value': 1}, {'id': '302', 'value': 1}, {'id': '329', 'value': 0}, {'id': '333', 'value': 1}, {'id': '335', 'value': 0}, {'id': '347', 'value': 0}, {'id': '349', 'value': 1}, {'id': '354', 'value': 1}, {'id': '377', 'value': 1}, {'id': '378', 'value': 0}, {'id': '381', 'value': 1}, {'id': '387', 'value': 0}, {'id': '400', 'value': 1}, {'id': '401', 'value': 0}, {'id': '419', 'value': 0}, {'id': '424', 'value': 0}, {'id': '434', 'value': 0}, {'id': '435', 'value': 0}, {'id': '437', 'value': 1}, {'id': '459', 'value': 0}, {'id': '481', 'value': 1}, {'id': '485', 'value': 1}, {'id': '495', 'value': 1}], 'src.evaluation.evaluation_metric_sparsity.SparsityMetric': [{'id': '7', 'value': 7.669291338582677}, {'id': '15', 'value': 7.822834645669292}, {'id': '38', 'value': 7.6141732283464565}, {'id': '40', 'value': 0.0}, {'id': '47', 'value': 7.988188976377953}, {'id': '56', 'value': 7.84251968503937}, {'id': '61', 'value': 7.893700787401575}, {'id': '90', 'value': 7.862204724409449}, {'id': '106', 'value': 7.775590551181103}, {'id': '127', 'value': 0.0}, {'id': '133', 'value': 0.0}, {'id': '135', 'value': 0.0}, {'id': '137', 'value': 0.0}, {'id': '140', 'value': 8.043307086614174}, {'id': '161', 'value': 0.0}, {'id': '166', 'value': 0.0}, {'id': '176', 'value': 7.921259842519685}, {'id': '195', 'value': 0.0}, {'id': '200', 'value': 0.0}, {'id': '211', 'value': 0.0}, {'id': '213', 'value': 0.0}, {'id': '225', 'value': 0.0}, {'id': '227', 'value': 7.956692913385827}, {'id': '237', 'value': 0.0}, {'id': '260', 'value': 7.65748031496063}, {'id': '262', 'value': 7.677165354330708}, {'id': '278', 'value': 0.0}, {'id': '293', 'value': 7.696850393700787}, {'id': '302', 'value': 7.952755905511811}, {'id': '329', 'value': 0.0}, {'id': '333', 'value': 7.602362204724409}, {'id': '335', 'value': 0.0}, {'id': '347', 'value': 0.0}, {'id': '349', 'value': 7.807086614173229}, {'id': '354', 'value': 7.862204724409449}, {'id': '377', 'value': 7.661417322834645}, {'id': '378', 'value': 0.0}, {'id': '381', 'value': 7.586614173228346}, {'id': '387', 'value': 0.0}, {'id': '400', 'value': 7.7637795275590555}, {'id': '401', 'value': 0.0}, {'id': '419', 'value': 0.0}, {'id': '424', 'value': 0.0}, {'id': '434', 'value': 0.0}, {'id': '435', 'value': 0.0}, {'id': '437', 'value': 7.771653543307087}, {'id': '459', 'value': 0.0}, {'id': '481', 'value': 7.952755905511811}, {'id': '485', 'value': 7.803149606299213}, {'id': '495', 'value': 7.559055118110236}], 'src.evaluation.evaluation_metric_fidelity.FidelityMetric': [{'id': '7', 'value': 1}, {'id': '15', 'value': 1}, {'id': '38', 'value': 1}, {'id': '40', 'value': 0}, {'id': '47', 'value': 1}, {'id': '56', 'value': 1}, {'id': '61', 'value': 1}, {'id': '90', 'value': 1}, {'id': '106', 'value': 1}, {'id': '127', 'value': 0}, {'id': '133', 'value': 0}, {'id': '135', 'value': 0}, {'id': '137', 'value': 0}, {'id': '140', 'value': 1}, {'id': '161', 'value': 0}, {'id': '166', 'value': 0}, {'id': '176', 'value': 1}, {'id': '195', 'value': 0}, {'id': '200', 'value': 0}, {'id': '211', 'value': 0}, {'id': '213', 'value': 0}, {'id': '225', 'value': 0}, {'id': '227', 'value': 1}, {'id': '237', 'value': 0}, {'id': '260', 'value': 1}, {'id': '262', 'value': 1}, {'id': '278', 'value': 0}, {'id': '293', 'value': 1}, {'id': '302', 'value': 1}, {'id': '329', 'value': 0}, {'id': '333', 'value': 1}, {'id': '335', 'value': 0}, {'id': '347', 'value': 0}, {'id': '349', 'value': 1}, {'id': '354', 'value': 1}, {'id': '377', 'value': 1}, {'id': '378', 'value': 0}, {'id': '381', 'value': 1}, {'id': '387', 'value': 0}, {'id': '400', 'value': 1}, {'id': '401', 'value': 0}, {'id': '419', 'value': 0}, {'id': '424', 'value': 0}, {'id': '434', 'value': 0}, {'id': '435', 'value': 0}, {'id': '437', 'value': 1}, {'id': '459', 'value': 0}, {'id': '481', 'value': 1}, {'id': '485', 'value': 1}, {'id': '495', 'value': 1}], 'src.evaluation.evaluation_metric_oracle_accuracy.OracleAccuracyMetric': [{'id': '7', 'value': 1}, {'id': '15', 'value': 1}, {'id': '38', 'value': 1}, {'id': '40', 'value': 1}, {'id': '47', 'value': 1}, {'id': '56', 'value': 1}, {'id': '61', 'value': 1}, {'id': '90', 'value': 1}, {'id': '106', 'value': 1}, {'id': '127', 'value': 1}, {'id': '133', 'value': 1}, {'id': '135', 'value': 1}, {'id': '137', 'value': 1}, {'id': '140', 'value': 1}, {'id': '161', 'value': 1}, {'id': '166', 'value': 1}, {'id': '176', 'value': 1}, {'id': '195', 'value': 1}, {'id': '200', 'value': 1}, {'id': '211', 'value': 1}, {'id': '213', 'value': 1}, {'id': '225', 'value': 1}, {'id': '227', 'value': 1}, {'id': '237', 'value': 1}, {'id': '260', 'value': 1}, {'id': '262', 'value': 1}, {'id': '278', 'value': 1}, {'id': '293', 'value': 1}, {'id': '302', 'value': 1}, {'id': '329', 'value': 1}, {'id': '333', 'value': 1}, {'id': '335', 'value': 1}, {'id': '347', 'value': 1}, {'id': '349', 'value': 1}, {'id': '354', 'value': 1}, {'id': '377', 'value': 1}, {'id': '378', 'value': 1}, {'id': '381', 'value': 1}, {'id': '387', 'value': 1}, {'id': '400', 'value': 1}, {'id': '401', 'value': 1}, {'id': '419', 'value': 1}, {'id': '424', 'value': 1}, {'id': '434', 'value': 1}, {'id': '435', 'value': 1}, {'id': '437', 'value': 1}, {'id': '459', 'value': 1}, {'id': '481', 'value': 1}, {'id': '485', 'value': 1}, {'id': '495', 'value': 1}]}

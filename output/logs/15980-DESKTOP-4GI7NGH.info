@@ -1,0 +1,12 @@
+2024-01-15 20:24:37,244661407 | INFO | 15980 - Executing: config/BBBP_GCN_RSGG.json Run: -1
+2024-01-15 20:24:37,244661409 | INFO | 15980 - Creating the evaluation manager.......................................................
+2024-01-15 20:24:37,244661410 | INFO | 15980 - Creating the PAIRED evaluators...............................................................
+2024-01-15 20:24:38,244661595 | INFO | 15980 - Loading: BBBP-8b0ede264b2c141668f9a08eaaa2af4b
+2024-01-15 20:24:38,244661838 | INFO | 15980 - Created: BBBP-8b0ede264b2c141668f9a08eaaa2af4b
+2024-01-15 20:24:38,244661853 | INFO | 15980 - Instantiating: src.oracle.nn.gcn.DownstreamGCN
+2024-01-15 20:24:38,244661894 | INFO | 15980 - Instantiating: torch.optim.RMSprop
+2024-01-15 20:24:38,244661895 | INFO | 15980 - Instantiating: torch.nn.CrossEntropyLoss
+2024-01-15 20:24:38,244661939 | INFO | 15980 - Loading: OracleTorch-9c14b3f2d2c5830053dec60a716aa072
+2024-01-15 20:24:38,244661985 | INFO | 15980 - Created: OracleTorch-9c14b3f2d2c5830053dec60a716aa072
+2024-01-15 20:24:38,244661998 | INFO | 15980 - Instantiating: src.explainer.generative.gans.image.model.GAN
+2024-01-15 20:24:38,244662003 | INFO | 15980 - Instantiating: src.explainer.generative.gans.image.generators.ResGenerator
